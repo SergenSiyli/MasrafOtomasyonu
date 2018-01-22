@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="MasrafOtomasyonuDbModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Masraflar">
+    <Key>
+      <PropertyRef Name="MasrafID" />
+    </Key>
+    <Property Name="MasrafID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Tarihi" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="Baslik" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Tutar" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Aciklama" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="Personeller" Relationship="Self.FK_Personeller_Masraflar" FromRole="Masraflar" ToRole="Personeller" />
+  </EntityType>
+  <EntityType Name="Personeller">
+    <Key>
+      <PropertyRef Name="PersonelID" />
+    </Key>
+    <Property Name="PersonelID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="PersonelAdi" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="PersonelSoyadi" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="PersonelKuadi" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="BaglıOlduguKisi" Type="Int32" />
+    <Property Name="YetkiID" Type="Int32" Nullable="false" />
+    <Property Name="MasrafID" Type="Int32" />
+    <Property Name="PersonelSifresi" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="Masraflar" Relationship="Self.FK_Personeller_Masraflar" FromRole="Personeller" ToRole="Masraflar" />
+    <NavigationProperty Name="Yetkiler" Relationship="Self.FK_Personeller_Yetkiler" FromRole="Personeller" ToRole="Yetkiler" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="principal_id" Type="Int32" Nullable="false" />
+    <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="version" Type="Int32" />
+    <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="Yetkiler">
+    <Key>
+      <PropertyRef Name="YetkiID" />
+    </Key>
+    <Property Name="YetkiID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="YetkiAdi" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="Personeller" Relationship="Self.FK_Personeller_Yetkiler" FromRole="Yetkiler" ToRole="Personeller" />
+  </EntityType>
+  <Association Name="FK_Personeller_Masraflar">
+    <End Role="Masraflar" Type="Self.Masraflar" Multiplicity="0..1" />
+    <End Role="Personeller" Type="Self.Personeller" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Masraflar">
+        <PropertyRef Name="MasrafID" />
+      </Principal>
+      <Dependent Role="Personeller">
+        <PropertyRef Name="MasrafID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Personeller_Yetkiler">
+    <End Role="Yetkiler" Type="Self.Yetkiler" Multiplicity="1" />
+    <End Role="Personeller" Type="Self.Personeller" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Yetkiler">
+        <PropertyRef Name="YetkiID" />
+      </Principal>
+      <Dependent Role="Personeller">
+        <PropertyRef Name="YetkiID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="MasrafOtomasyonuDbEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Masraflar" EntityType="Self.Masraflar" />
+    <EntitySet Name="Personeller" EntityType="Self.Personeller" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" />
+    <EntitySet Name="Yetkiler" EntityType="Self.Yetkiler" />
+    <AssociationSet Name="FK_Personeller_Masraflar" Association="Self.FK_Personeller_Masraflar">
+      <End Role="Masraflar" EntitySet="Masraflar" />
+      <End Role="Personeller" EntitySet="Personeller" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Personeller_Yetkiler" Association="Self.FK_Personeller_Yetkiler">
+      <End Role="Yetkiler" EntitySet="Yetkiler" />
+      <End Role="Personeller" EntitySet="Personeller" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

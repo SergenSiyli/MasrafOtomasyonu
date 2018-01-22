@@ -1,0 +1,12 @@
+C:\Users\SERGEN\documents\visual studio 2015\Projects\MasrafOtomasyonuSergenSiyli\MasrafOtomasyonu.BLL\bin\Debug\MasrafOtomasyonu.BLL.dll.config
+C:\Users\SERGEN\documents\visual studio 2015\Projects\MasrafOtomasyonuSergenSiyli\MasrafOtomasyonu.BLL\bin\Debug\MasrafOtomasyonu.BLL.dll
+C:\Users\SERGEN\documents\visual studio 2015\Projects\MasrafOtomasyonuSergenSiyli\MasrafOtomasyonu.BLL\bin\Debug\MasrafOtomasyonu.BLL.pdb
+C:\Users\SERGEN\documents\visual studio 2015\Projects\MasrafOtomasyonuSergenSiyli\MasrafOtomasyonu.BLL\bin\Debug\EntityFramework.dll
+C:\Users\SERGEN\documents\visual studio 2015\Projects\MasrafOtomasyonuSergenSiyli\MasrafOtomasyonu.BLL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\SERGEN\documents\visual studio 2015\Projects\MasrafOtomasyonuSergenSiyli\MasrafOtomasyonu.BLL\bin\Debug\MasrafOtomasyonu.DAL.dll
+C:\Users\SERGEN\documents\visual studio 2015\Projects\MasrafOtomasyonuSergenSiyli\MasrafOtomasyonu.BLL\bin\Debug\MasrafOtomasyonu.DAL.pdb
+C:\Users\SERGEN\documents\visual studio 2015\Projects\MasrafOtomasyonuSergenSiyli\MasrafOtomasyonu.BLL\bin\Debug\EntityFramework.xml
+C:\Users\SERGEN\documents\visual studio 2015\Projects\MasrafOtomasyonuSergenSiyli\MasrafOtomasyonu.BLL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\SERGEN\documents\visual studio 2015\Projects\MasrafOtomasyonuSergenSiyli\MasrafOtomasyonu.BLL\obj\Debug\MasrafOtomasyonu.BLL.csprojResolveAssemblyReference.cache
+C:\Users\SERGEN\documents\visual studio 2015\Projects\MasrafOtomasyonuSergenSiyli\MasrafOtomasyonu.BLL\obj\Debug\MasrafOtomasyonu.BLL.dll
+C:\Users\SERGEN\documents\visual studio 2015\Projects\MasrafOtomasyonuSergenSiyli\MasrafOtomasyonu.BLL\obj\Debug\MasrafOtomasyonu.BLL.pdb

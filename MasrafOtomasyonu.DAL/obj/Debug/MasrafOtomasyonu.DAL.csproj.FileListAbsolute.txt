@@ -1,0 +1,10 @@
+C:\Users\SERGEN\documents\visual studio 2015\Projects\MasrafOtomasyonuSergenSiyli\MasrafOtomasyonu.DAL\bin\Debug\MasrafOtomasyonu.DAL.dll.config
+C:\Users\SERGEN\documents\visual studio 2015\Projects\MasrafOtomasyonuSergenSiyli\MasrafOtomasyonu.DAL\bin\Debug\MasrafOtomasyonu.DAL.dll
+C:\Users\SERGEN\documents\visual studio 2015\Projects\MasrafOtomasyonuSergenSiyli\MasrafOtomasyonu.DAL\bin\Debug\MasrafOtomasyonu.DAL.pdb
+C:\Users\SERGEN\documents\visual studio 2015\Projects\MasrafOtomasyonuSergenSiyli\MasrafOtomasyonu.DAL\bin\Debug\EntityFramework.dll
+C:\Users\SERGEN\documents\visual studio 2015\Projects\MasrafOtomasyonuSergenSiyli\MasrafOtomasyonu.DAL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\SERGEN\documents\visual studio 2015\Projects\MasrafOtomasyonuSergenSiyli\MasrafOtomasyonu.DAL\bin\Debug\EntityFramework.xml
+C:\Users\SERGEN\documents\visual studio 2015\Projects\MasrafOtomasyonuSergenSiyli\MasrafOtomasyonu.DAL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\SERGEN\documents\visual studio 2015\Projects\MasrafOtomasyonuSergenSiyli\MasrafOtomasyonu.DAL\obj\Debug\MasrafOtomasyonu.DAL.csprojResolveAssemblyReference.cache
+C:\Users\SERGEN\documents\visual studio 2015\Projects\MasrafOtomasyonuSergenSiyli\MasrafOtomasyonu.DAL\obj\Debug\MasrafOtomasyonu.DAL.dll
+C:\Users\SERGEN\documents\visual studio 2015\Projects\MasrafOtomasyonuSergenSiyli\MasrafOtomasyonu.DAL\obj\Debug\MasrafOtomasyonu.DAL.pdb
